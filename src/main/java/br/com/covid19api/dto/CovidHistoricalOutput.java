@@ -5,6 +5,7 @@ import lombok.Data;
 
 import java.time.LocalDate;
 import java.util.Map;
+import java.util.Set;
 
 @Data
 public class CovidHistoricalOutput {
@@ -15,11 +16,20 @@ public class CovidHistoricalOutput {
 
     private CovidHistoricalTimeline timeline;
 
+    public Set<Map.Entry<String, Integer>> getCases() {
+        return this.timeline.getCases().entrySet();
+    }
+
+    public Set<Map.Entry<String, Integer>> getDeaths() {
+        return this.timeline.getDeaths().entrySet();
+    }
+
     @Data
-    private static class CovidHistoricalTimeline {
+    public static class CovidHistoricalTimeline {
 
         private Map<String, Integer> cases;
 
         private Map<String, Integer> deaths;
+
     }
 }
