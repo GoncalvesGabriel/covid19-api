@@ -21,6 +21,11 @@ public class ComparisonCovidHistoricalConsumer implements CovidHistoricalConsume
         comparison.setCountry(dto.getCountry());
         firstCase.ifPresent(f -> comparison.setFirstCaseDate(f.getKey()));
         firstDeath.ifPresent(f -> comparison.setFirstDeathDate(f.getKey()));
+
+        dto.getCases().stream().skip(dto.getCases().size() - 1).findFirst().ifPresent(s -> comparison.setCurrentCasesAmount(s.getValue()));
+        dto.getDeaths().stream().skip(dto.getDeaths().size() - 1).findFirst().ifPresent(s -> comparison.setCurrentDeathsAmount(s.getValue()));
+
+
         return comparison;
     }
 
