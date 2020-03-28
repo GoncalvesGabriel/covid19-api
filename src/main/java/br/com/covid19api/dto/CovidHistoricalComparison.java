@@ -15,4 +15,7 @@ public class CovidHistoricalComparison {
 
     private Integer currentDeathsAmount;
 
+    private String mostCasesDate;
+
+    private String mostDeathsDate;
 }

@@ -27,7 +27,9 @@ public class CovidHistoricalController {
     @ApiResponse(code = 200, message = "Busca do comparativo realizado com sucesso")
     @ApiParam(value = "Nomes dos países para comparação")
     @GetMapping
-    public List<CovidHistoricalComparison> getComparison(@RequestParam("paises") List<String> countries) {
+    public List<CovidHistoricalComparison> getComparison(
+            @RequestParam("paises")
+            @ApiParam(value = "Nomes dos países para comparação") List<String> countries) {
         return this.service.getComparison(countries);
     }
 
