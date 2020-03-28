@@ -1,8 +1,8 @@
 # covid19-api
 
 ### Objetivo
-- Cosumir a https://corona.lmao.ninja/v2/historical 
-Essa aplicação é responsável por consumir a api, consolidar e comparar informações entre os casos de corona virus nos diversos paíse, devolvendo a informação no seguinte formato:
+- Consumir a https://corona.lmao.ninja/v2/historical 
+Essa aplicação é responsável por consumir a API, consolidar e comparar informações entre os casos de corona vírus nos diversos países, devolvendo a informação no seguinte formato:
 
 [<br/>
     {<br/>
@@ -44,7 +44,7 @@ Essa aplicação é responsável por consumir a api, consolidar e comparar infor
 ]<br/>
 
 ### Benefícios
-- A api apresenta de forma sucinta e consolidada os dados dos país elém de permitir comparações da evolução do corona entre países 
+- A API apresenta de forma sucinta e consolidada os dados dos países elém de permitir comparações da evolução do corona entre eles 
 
 
 ### Tecnologias
@@ -59,4 +59,4 @@ Essa aplicação é responsável por consumir a api, consolidar e comparar infor
 ### Executar na IDE
 - Basta executar a classe Covid19ApiApplication, com a aplicação rodando o seguinte endpoint estará disponível:  
         http://localhost:8080/covid19-api/historicos?paises={PAIS} <br/>
-  Sendo {PAIS} subistituido pela lista de paises separados por vírgulas 
+  Sendo {PAIS} substituido pela lista de paises separados por vírgula
