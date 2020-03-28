@@ -43,6 +43,10 @@ Essa aplicação é responsável por consumir a api, consolidar e comparar infor
     }<br/>
 ]<br/>
 
+### Benefícios
+- A api apresenta de forma sucinta e consolidada os dados dos país elém de permitir comparações da evolução do corona entre países 
+
+
 ### Tecnologias
 - Java
 - Gradle
