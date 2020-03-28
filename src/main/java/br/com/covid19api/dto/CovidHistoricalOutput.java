@@ -1,5 +1,10 @@
 package br.com.covid19api.dto;
 
+import lombok.Data;
+
+import java.util.Map;
+
+@Data
 public class CovidHistoricalOutput {
 
     private String country;
@@ -8,7 +13,11 @@ public class CovidHistoricalOutput {
 
     private CovidHistoricalTimeline timeline;
 
-    private class CovidHistoricalTimeline {
+    @Data
+    private static class CovidHistoricalTimeline {
 
+        private Map<String, Integer> cases;
+
+        private Map<String, Integer> deaths;
     }
 }
