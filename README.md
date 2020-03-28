@@ -8,7 +8,7 @@ Essa aplicação é responsável por consumir a api, consolidar e comparar infor
 
 ### Tecnologias
 - Java
-- Maven
+- Gradle
 - Spring boot
 - Spring web
 - Rest
