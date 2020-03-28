@@ -4,6 +4,7 @@ import br.com.covid19api.provider.receivers.CoronaLmaoConsumer;
 import br.com.covid19api.service.CovidHistoricalService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -17,9 +18,9 @@ public class CovidHistoricalController {
     @Autowired
     private CoronaLmaoConsumer receiver;
 
-    @GetMapping
-    public void getHistorical(){
-        receiver.consume();
+    @GetMapping("{country}")
+    public void getHistorical(@PathVariable("country") String country){
+        receiver.consume(country);
     }
 
 

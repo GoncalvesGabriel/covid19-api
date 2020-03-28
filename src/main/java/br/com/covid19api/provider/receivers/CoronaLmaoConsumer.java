@@ -19,9 +19,9 @@ public class CoronaLmaoConsumer implements IntegrationConsumer {
   private CoronaLmaoProperties properties;
 
   @Override
-  public void consume() {
+  public void consume(String country) {
     Map<String, String> params = new HashMap<>();
-    String urlFull = String.format("%s%s", properties.getUrl(), properties.getHistoricalEndpoint());
+    String urlFull = String.format("%s%s/%s", properties.getUrl(), properties.getHistoricalEndpoint(), country);
     CovidHistoricalOutput historical = template.getForObject(urlFull, CovidHistoricalOutput.class, params);
     System.out.println(historical);
   }
