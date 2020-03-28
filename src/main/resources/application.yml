@@ -1,0 +1,9 @@
+corona:
+  lmao:
+    historicalEndpoint: /v2/historical
+    url: https://corona.lmao.ninja
+
+server:
+  port: 8080
+  servlet:
+    contextPath: /covid19-api
