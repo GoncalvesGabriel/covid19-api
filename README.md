@@ -11,6 +11,8 @@ Essa aplicação é responsável por consumir a api, consolidar e comparar infor
 - Gradle
 - Spring boot
 - Spring web
+- Swagger
+- Lombok
 - Rest
 
 ### Executar na IDE
