@@ -15,5 +15,5 @@ Essa aplicação é responsável por consumir a api, consolidar e comparar infor
 
 ### Executar na IDE
 - Basta executar a classe Covid19ApiApplication, com a aplicação rodando o seguinte endpoint estará disponível:  
-        http://localhost:8080/covid19-api/historicos?paises={PAIS}
+        http://localhost:8080/covid19-api/historicos?paises={PAIS} <br/>
   Sendo {PAIS} subistituido pela lista de paises separados por vírgulas 
