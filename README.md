@@ -1,8 +1,7 @@
 # covid19-api
 
 ### Objetivo
-- Consumir a https://corona.lmao.ninja/v2/historical 
-Essa aplicação é responsável por consumir a API, consolidar e comparar informações entre os casos de corona vírus nos diversos países, devolvendo a informação no seguinte formato:
+-  Essa aplicação é responsável por consumir a API https://corona.lmao.ninja/v2/historical, consolidar e comparar informações entre os casos de corona vírus nos diversos países, devolvendo a informação no seguinte formato:
 
 [<br/>
     {<br/>
